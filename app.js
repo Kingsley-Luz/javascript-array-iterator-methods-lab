@@ -285,7 +285,7 @@ old or older.
 
 // Complete the exercise in the space below:
 let isAdultPresent = devs.some((dev)=>{
-    if (dev.year < 2006) {
+    if (dev.year < 2007) {
         return dev
     }
 })
@@ -307,7 +307,11 @@ Use Array.prototype.every() to determine if every person in the devs array is
 */
 
 // Complete the exercise in the space below:
-let isEveryone19OrOlder 
+let isEveryone19OrOlder = devs.every((dev)=>{
+  if (dev.year > 2006)
+    return false
+  else return true
+})
 // Check your work:
 console.log('Exercise 7 my result: ', isEveryone19OrOlder);
 console.log('Exercise 7 correct result: ', false);
